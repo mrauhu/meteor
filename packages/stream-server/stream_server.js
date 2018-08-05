@@ -139,7 +139,7 @@ StreamServer = function () {
 
 };
 
-_.extend(StreamServer.prototype, {
+Object.assign(StreamServer.prototype, {
   // call my callback when a new socket connects.
   // also call it for all current connections.
   register: function (callback) {
